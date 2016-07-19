@@ -1,0 +1,147 @@
+.gis-prices {
+	font-family: 'HelveticaNeueCyrRoman', 'Arial', sans-serif;
+	&__table-wrap {
+		position: relative;
+		float: right;
+		width: 580px;
+		padding: 36px;
+		padding-top: 48px;
+		border: 2px dashed #3dc5ed;
+		border-radius: 6px;
+
+		&::before {
+			position: absolute;
+			content: "";
+			width: 12px;
+			height: 12px;
+			display: block;
+			top: -31px;
+			right: 138px;
+			background: #3dc5ed;
+			border-radius: 50%;
+			border: 24px solid #cdeffb;
+		}
+	}
+
+	&__table-title {
+		text-align: center;
+		font-weight: 300;
+		font-size: 28px;
+		margin-top: 0;
+		margin-bottom: 38px;
+		color: #002130;
+	}
+
+	&__table {
+		font-size: 21px;
+		color: #666;
+		width: 100%;
+		border-collapse: collapse;
+
+		tr, td, th {
+			border-bottom: 1px solid #d3e1e7;
+			text-align: left;
+			padding: 18px 20px;
+		}
+
+		th {
+			background: #cdeffb;
+			font-weight: 400;
+		}
+		td:nth-child(2) {
+			color: #000;
+			text-align: right;
+			padding-left: 0;
+		}
+		td:last-child, th:last-child {
+			text-align: right;
+		}
+	}
+
+	&__special {
+		padding: 153px 60px 210px;
+		position: relative;
+		width: 360px;
+		float: left;
+		background: #fefbcc;
+		border: 2px dashed #b1cb00;
+		border-radius: 6px;
+
+		font-family: 'PFDinTextPro', 'Arial', sans-serif;
+
+		p {
+			font-size: 21px;
+			margin: 0;
+		}
+		p:nth-child(2) {
+			font-weight: 600;
+		}
+		.text-large {
+			font-size: 70px;
+			line-height: 1;
+			margin-top: 10px;
+		}
+		.sub {
+			font-size: 65%;
+		}
+		.free {
+			position: relative;
+			display: block;
+    		padding: 10px 0;
+    		margin-left: -62px;
+    		margin-top: 36px;
+    		margin-bottom: 55px;
+			font-size: 28px;
+			text-transform: uppercase;
+			color: #fff;
+    		background: #b1cb00;
+    		width: 121%;
+    		text-align: center;
+    		&::before, &::after {
+    			display: block;
+    			position: absolute;
+    			content: "";
+    			background: #b1cb00;
+    			height: 50%;
+    			width: 34px;
+    			right: -13px;
+    		}
+    		&::before {
+    			top: 0;
+    			transform: skewX(-30deg);
+    		}
+    		&::after {
+    			bottom: 0;
+    			transform: skewX(30deg);
+    		}
+		}
+
+		.note {
+			position: absolute;
+			left: 60px;
+			bottom: 30px;
+			color: #666;
+			font-size: 22px;
+			font-weight: 300;
+
+			span {
+				color: #afcb1f;
+				font-weight: 400;
+			}
+		}
+
+		&::before {
+			position: absolute;
+			content: "";
+			width: 12px;
+			height: 12px;
+			display: block;
+			top: -31px;
+			left: 50%;
+			transform: translate(-50%);
+			background: #fefbcc;
+			border-radius: 50%;
+			border: 24px solid #b1cb00;
+		}
+	}
+}

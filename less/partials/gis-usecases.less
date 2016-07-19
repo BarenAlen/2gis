@@ -1,0 +1,82 @@
+.gis-usecases {
+	font-family: 'HelveticaNeueCyrRoman', 'Arial', sans-serif;
+	background: #ebf9fd;
+	padding-top: 60px;
+	margin-bottom: 62px;
+
+	position: relative;
+	z-index: -3;
+	&__list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	&__usecase {
+		width: 326.666px;
+		display: block;
+		float: left;
+		margin-bottom: 90px;
+		text-align: center;
+		position: relative;
+		/* dashed arrow */
+		&--arrow {
+			&::after {
+				position: absolute;
+				display: block;
+				content: "";
+				width: 331px;
+				height: 311px;
+				top: -12px;
+				right: -163px;
+				border-top: 2px dashed #53ccef;
+				border-radius: 50%;
+				z-index: -1;
+			}
+			/* arrow head */
+			.arrow-head {
+			    display: inline-block;
+			    color: #3dc5ed;
+			    font-family: FontAwesome;
+			    font-style: normal;
+			    position: absolute;
+			    z-index: 5;
+			    right: -98px;
+			    top: 8px;
+			    font-size: 24px;
+			    text-align: center;
+			    width: 28px;
+			    height: 0px;
+			    display: inline-block;
+			    vertical-align: bottom;
+			    transform: rotate(-45deg);
+			    background: #EBF9FD;
+			    /* hides edge of dashed line */
+			    &::after {
+			    	content: "";
+			    	width: 20px;
+			    	height: 20px;
+			    	background: #EBF9FD;
+			    	position: absolute;
+			    	right: 3px;
+			    	top: 22px;
+			    }
+			}
+		}
+		img {
+			margin-bottom: 25px;
+			position: relative;
+			z-index: 5;
+			&.img-block{
+				display: block;
+			}
+		}
+
+		p {
+			margin: 0;
+			padding: 0 45px;
+			color: #666;
+			line-height: 1.3;
+		}
+	}
+}
