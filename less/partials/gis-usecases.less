@@ -1,11 +1,19 @@
 .gis-usecases {
 	font-family: 'HelveticaNeueCyrRoman', 'Arial', sans-serif;
 	background: #ebf9fd;
-	padding-top: 60px;
-	margin-bottom: 62px;
+	padding-top: 63px;
+	margin-bottom: 66px;
 
 	position: relative;
 	z-index: -3;
+	&__title {
+		margin-bottom: 86px;
+	}
+	&__wrapper {
+		width: 940px;
+		margin: 0 auto;
+	}
+
 	&__list {
 		list-style: none;
 		margin: 0;
@@ -13,54 +21,33 @@
 	}
 
 	&__usecase {
-		width: 326.666px;
+		width: 313px;
 		display: block;
 		float: left;
-		margin-bottom: 90px;
+		margin-bottom: 82px;
 		text-align: center;
 		position: relative;
+		&:nth-child(3n + 3) {
+			padding-left: 32px;
+		}
 		/* dashed arrow */
 		&--arrow {
 			&::after {
 				position: absolute;
 				display: block;
 				content: "";
-				width: 331px;
-				height: 311px;
-				top: -12px;
-				right: -163px;
-				border-top: 2px dashed #53ccef;
-				border-radius: 50%;
+				width: 194px;
+				height: 39px;
+				top: -20px;
+				right: -93px;
+				background-image: url("../img/arrow.png");
+				background-repeat: no-repeat;
 				z-index: -1;
 			}
-			/* arrow head */
-			.arrow-head {
-			    display: inline-block;
-			    color: #3dc5ed;
-			    font-family: FontAwesome;
-			    font-style: normal;
-			    position: absolute;
-			    z-index: 5;
-			    right: -98px;
-			    top: 8px;
-			    font-size: 24px;
-			    text-align: center;
-			    width: 28px;
-			    height: 0px;
-			    display: inline-block;
-			    vertical-align: bottom;
-			    transform: rotate(-45deg);
-			    background: #EBF9FD;
-			    /* hides edge of dashed line */
-			    &::after {
-			    	content: "";
-			    	width: 20px;
-			    	height: 20px;
-			    	background: #EBF9FD;
-			    	position: absolute;
-			    	right: 3px;
-			    	top: 22px;
-			    }
+			&:nth-child(2), &:nth-child(5) {
+				&::after {
+					right: -113px;
+				}
 			}
 		}
 		img {
@@ -69,12 +56,13 @@
 			z-index: 5;
 			&.img-block{
 				display: block;
+				margin-left: -8px;
 			}
 		}
 
 		p {
 			margin: 0;
-			padding: 0 45px;
+			padding: 0 40px;
 			color: #666;
 			line-height: 1.3;
 		}

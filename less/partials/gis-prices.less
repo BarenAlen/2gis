@@ -1,5 +1,14 @@
 .gis-prices {
 	font-family: 'HelveticaNeueCyrRoman', 'Arial', sans-serif;
+	background-image: radial-gradient(circle, #cdeffb 22%, transparent 20%),
+					  radial-gradient(circle, #e0ea99 19%, transparent 19%),
+					  radial-gradient(circle, #e0ea99 11%, white 10%);
+    background-position: -40px 144px, -410px 383px, 450px -320px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+	&__wrapper {
+		width: 940px;
+		margin: 0 auto;
+	}
 	&__table-wrap {
 		position: relative;
 		float: right;
@@ -8,6 +17,7 @@
 		padding-top: 48px;
 		border: 2px dashed #3dc5ed;
 		border-radius: 6px;
+		background: #fff;
 
 		&::before {
 			position: absolute;
@@ -42,16 +52,24 @@
 			border-bottom: 1px solid #d3e1e7;
 			text-align: left;
 			padding: 18px 20px;
+			padding-left: 24px;
 		}
 
 		th {
 			background: #cdeffb;
 			font-weight: 400;
+			padding-top: 23px;
+    		padding-bottom: 21px;
+    		padding-left: 24px;
+		}
+		th:nth-child(2) {
+			padding-left: 37px;
 		}
 		td:nth-child(2) {
 			color: #000;
 			text-align: right;
 			padding-left: 0;
+			padding-right: 24px;
 		}
 		td:last-child, th:last-child {
 			text-align: right;
@@ -59,9 +77,9 @@
 	}
 
 	&__special {
-		padding: 153px 60px 210px;
+		padding: 163px 60px 223px;
 		position: relative;
-		width: 360px;
+		width: 342px;
 		float: left;
 		background: #fefbcc;
 		border: 2px dashed #b1cb00;
@@ -72,6 +90,7 @@
 		p {
 			font-size: 21px;
 			margin: 0;
+			line-height: 0.9;
 		}
 		p:nth-child(2) {
 			font-weight: 600;
@@ -79,23 +98,23 @@
 		.text-large {
 			font-size: 70px;
 			line-height: 1;
-			margin-top: 10px;
+			margin-top: 11px;
 		}
 		.sub {
-			font-size: 65%;
+			font-size: 58%;
 		}
 		.free {
 			position: relative;
 			display: block;
-    		padding: 10px 0;
+    		padding: 9px 0;
     		margin-left: -62px;
-    		margin-top: 36px;
-    		margin-bottom: 55px;
+    		margin-top: 41px;
+    		margin-bottom: 61px;
 			font-size: 28px;
 			text-transform: uppercase;
 			color: #fff;
     		background: #b1cb00;
-    		width: 121%;
+    		width: 130%;
     		text-align: center;
     		&::before, &::after {
     			display: block;
@@ -108,20 +127,20 @@
     		}
     		&::before {
     			top: 0;
-    			transform: skewX(-30deg);
+    			transform: skewX(-34deg);
     		}
     		&::after {
     			bottom: 0;
-    			transform: skewX(30deg);
+    			transform: skewX(34deg);
     		}
 		}
 
 		.note {
 			position: absolute;
 			left: 60px;
-			bottom: 30px;
+			bottom: 34px;
 			color: #666;
-			font-size: 22px;
+			font-size: 24px;
 			font-weight: 300;
 
 			span {
